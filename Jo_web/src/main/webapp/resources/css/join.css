@@ -1,0 +1,301 @@
+@charset "UTF-8";
+/* PC용 CSS 기준: 1536px, rem */
+
+  h1{font-size: 0;}
+
+        #wrap{
+            background: #e0e0e0;
+            /* height: 970px; */ /* pc기준 1536px을 기준으로 정의함 */
+            height: 860px; /* (1536 * 90) / 100 = 1382.4px */
+            margin: 0 auto;
+            padding-top: 10px;
+            position: relative;
+        }
+        header{
+            display: flex; /* flex 사용 */
+            flex-direction: row; /* header 영역에 해당하는 요소는 왼쪽부터 오른쪽으로 가로방향 */
+            justify-content: flex-start;
+            width: 100%;
+            height: 385px;
+        }
+        #info-menu{
+            align-self: flex-end;
+            width: 21.7%; /* (300 / 1382.4) * 100 = 21.7%  */
+            height: 30px;
+            font: bold 1.125rem Arial, sans-serif; /* 1rem = 16px , 1.125rem = 18px */
+            text-align: center;
+            position: relative;
+            top: -270px;
+            left: 920px;
+        }
+        #smalllogo{
+            width: 200px; 
+            height: 70px;
+            display: inline-block;
+            background-image: url("img/small_logo.PNG");
+            background-size: 100% 80px;
+            position: absolute;
+            top: 70px;
+            left: 540px;
+        }
+        a{
+            text-decoration: none;
+            color: #000000;
+        }
+        #left-menu{
+            align-self: flex-start;
+            padding-top:200px;
+            width: 233px;
+            margin-left: -264px;
+        }
+        ul li{
+            list-style-type: none;
+        }
+
+        ul li a{
+            list-style-type: none;
+            font: bold 18px Arial, sans-serif;
+            line-height: 30px;
+            text-decoration-line: none;
+            font: bold;
+            color: black;
+        }
+        ul li a:hover{
+            color: #969691;
+        }
+
+        /* ---- 내용 영역 ---- */
+        #container{
+            width: 800px;
+            margin: 0 auto;
+            left: 80px;
+            bottom: 190px;
+            position: relative;
+        }
+        span{
+            color: red;
+        }
+        label{
+            font: bold 13px Arial, sans-serif; 
+            position: relative;
+            bottom: 23px;
+            
+        }
+        input{
+            position: relative;
+            width: 400px;
+            height: 30px;
+            padding-left: 8px;
+            margin-top: 0px;
+            border: 1px solid #7a7a7a; 
+            outline-width: 1px;
+            outline-color: #000000;
+        }
+        #member_id{
+            position: relative;
+            left: 0px;
+            top: -25px;
+        }
+        #member_pw{
+            position: relative;
+            left: -2px;
+            top: -25px;
+        }
+        #confirm{
+            position: relative;
+            top: -25px;
+            margin-bottom: 5px;
+        }
+        #member_name{
+            position: relative;
+            top: -25px;
+        }
+        #email{
+            position: relative;
+            left: -3px;
+            top: -25px;
+        }
+        #handphone{
+            position: relative;
+            top: -25px;
+        }
+        #searchbutton{
+            position: relative;
+            bottom: 25px;
+        }
+        #address-1{
+            position: relative;
+            width: 100px;
+            height: 30px;
+            right: 417px;
+            top: 15px;
+        }
+        #member_add{
+            position: relative;
+            width: 280PX;
+            height: 30px;
+            bottom: 24px;
+            left: 267px;
+        }
+        #checkbox1{
+            width: 412px;
+            height: 200px;
+            border: 1px solid gray;
+            background-color: white;
+            margin: 0 auto;
+            left: -47px;
+            bottom: 68px;
+            box-sizing: border-box;
+            position: relative;
+            outline-width: 1px;
+            outline-color: black;
+        }
+        #line{
+            border-top: 2px solid #969691;
+            margin: 30px auto;
+            width: 370px;
+            position: relative;
+            left: -50px;
+            bottom: 190px;
+        }
+        input[type=checkbox] {
+            position: relative;
+            left: -22px;
+            bottom: 290px;
+            margin-bottom: 20px;
+            accent-color: lightgrey;
+        }
+        input[type=button] {
+            float: right;
+            position: relative;
+            width: 100px;
+            height: 34px;
+            right: 120px;
+            bottom: 75px;
+            font: bold 12px solid;
+            color: black;
+            background-color: white;
+        }
+        input[type=submit] {
+            position: relative;
+            width: 140px;
+            height: 41px;
+            left: 164px;
+            top: 200px;
+            background-color: black;
+            border: 1px solid black;
+            border-radius: 20px;
+            color: white;
+            font: bold 14px solid;
+            padding-bottom: 5px;
+        }
+        input[type=reset] {
+            position: relative;
+            width: 140px;
+            height: 41px;
+            background-color: black;
+            border: 1px solid black;
+            border-radius: 20px;
+            left: 253px;
+            top: 200px;
+            color: white;
+            font: bold 14px solid;
+            padding-bottom: 5px;
+        }
+        .notice1 {
+            line-height: 50px;
+        }
+        .notice1 a{
+            position: relative;
+            left: 220px;
+            bottom: 475px;
+            font: bold 14px Arial, sans-serif;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .notice2 {
+            line-height: 25px;
+        }
+        .notice2 a{
+            position: relative;
+            left: 220px;
+            bottom: 590px;
+            font: bold 12px Arial, sans-serif;
+        }
+        #notice4{
+            position: relative;
+            left: 390px;
+            bottom: 468px;
+        }
+        #phone{
+            width: 398px;
+            position: relative;
+            text-align: left;
+            padding-left: 10px;
+        }
+        #phone1{
+            width: 120px;
+            position: relative;
+            text-align: center;
+            padding-left: 0px;
+            left: 289px;
+            bottom: px;
+        }
+        #phone2{
+            width: 120px;
+            position: relative;
+            text-align: center;
+            padding-left: 0px;
+            left: 433px;
+            bottom: 110px;
+        }
+        .notice2 input[type=checkbox] {
+            position: relative;
+            width: 20px;
+        }
+        #notice5{
+            position: relative;
+            left: 390px;
+            bottom: 492px;
+        }
+        #completebox{
+            position: relative;
+            width: 150px;
+            height: 40px;
+            bottom: 490px;
+            text-align: center;
+            font: 18px;
+            left: 145px;
+            cursor: pointer;
+        }
+        button{
+            color: white;
+            text-align: center;
+            position: relative;
+            top: 6px;
+            cursor: pointer;
+            background-color: black;
+        }
+        #selectall{
+            position: relative;
+            background-color: white;
+            font: 10px solid black;
+        } 
+        /* ---- footer 영역 ---- */
+        footer{
+            width: 1247px; 
+            height: 40px;
+            margin-left: 0px;
+            position: absolute;
+            transform: translateY(-375%);
+            background: black;
+            top: 980px;
+        }
+        #footer{
+            top: 10px;
+            position: relative;
+            color: #ffffff;
+            font: 13px Arial;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow';
+            word-spacing: 4px;
+            text-align: center;
+        }

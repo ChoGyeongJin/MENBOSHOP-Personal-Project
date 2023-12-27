@@ -1,0 +1,256 @@
+@charset "UTF-8";
+
+h1{font-size: 0;}
+
+         #wrap{
+            background: #e0e0e0;
+            /* height: 970px; */ /* pc기준 1536px을 기준으로 정의함 */
+            height: 860px; /* (1536 * 90) / 100 = 1382.4px */
+            margin: 0 auto;
+            padding-top: 10px;
+            position: relative;
+        }
+        header{
+            display: flex; /* flex 사용 */
+            flex-direction: row; /* header 영역에 해당하는 요소는 왼쪽부터 오른쪽으로 가로방향 */
+            justify-content: flex-start;
+            width: 100%;
+            height: 385px;
+        }
+        #info-menu{
+            align-self: flex-end;
+            width: 21.7%; /* (300 / 1382.4) * 100 = 21.7%  */
+            height: 30px;
+            font: bold 1.125rem Arial, sans-serif; /* 1rem = 16px , 1.125rem = 18px */
+            text-align: center;
+            position: relative;
+            top: -270px;
+            left: 920px;
+        }
+        #smalllogo{
+            width: 200px; 
+            height: 70px;
+            display: inline-block;
+            background-image: url("media/small_logo.png");
+            background-size: 100% 80px;
+            position: absolute;
+            top: 70px;
+            left: 540px;
+        }
+        a{
+            text-decoration: none;
+            color: #000000;
+        }
+        #left-menu{
+            align-self: flex-start;
+            padding-top:200px;
+            width: 233px;
+            margin-left: -264px;
+        }
+        #left-menu ul li{
+            list-style-type: none;
+        }
+
+        #left-menu ul li a{
+            list-style-type: none;
+            font: bold 18px Arial, sans-serif;
+            line-height: 30px;
+            text-decoration-line: none;
+            font: bold;
+            color: black;
+        }
+        #left-menu ul li a:hover{
+            color: #969691;
+        }
+        #board_list {
+            list-style: none;
+            position: relative;
+            left: 250px;
+            bottom: 300px;
+        }
+        #board_list ul {
+            list-style: none;
+        }
+        #board_list ul li {
+            float: left;
+        }
+        #board_list ul li a {
+            font: bold 1.125rem Arial, sans-serif;
+        }
+        #page-list {
+            width: 900px;
+            position: absolute;
+            left: 223px;
+            top: 700px;
+        }
+        #page-list ul {
+        list-style: none;
+        }
+        #page-list ul li a {
+            float: left;
+            font: bold 15px Arial, sans-serif;
+        }
+        #page-list ul li a:hover{
+            color: #969691;
+        }
+        #line1{
+            border-top: 2px solid #969691;
+            margin: 30px auto;
+            width: 900px;
+            position: relative;
+            left: 90px;
+            bottom: 223px;
+        }
+        #line2{
+            border-top: 2px solid #969691;
+            margin: 30px auto;
+            width: 900px;
+            position: relative;
+            left: 90px;
+            bottom: 200px;
+        }
+        #line3{
+            border-top: 2px solid #969691;
+            margin: 30px auto;
+            width: 900px;
+            position: relative;
+            left: 90px;
+            top: 100px;
+        }
+        input[type=button] {
+            position: absolute;
+            width: 140px;
+            height: 41px;
+            background-color: black;
+            border: 1px solid black;
+            right: 382px;
+            bottom: px;
+            color: white;
+            font: bold 15px solid;
+            padding-bottom: 5px;
+        }
+        input[type=button]:hover {
+            background-color:white;
+            color:black;
+        }
+        #smalllogo{
+            width: 200px; 
+            height: 70px;
+            display: inline-block;
+            background-image: url("img/small_logo.PNG");
+            background-size: 100% 80px;
+            position: absolute;
+            top: 70px;
+            left: 540px;
+        }
+        table{
+        position: relative;
+        width:1250px;
+        left:295px;
+        bottom:270px;
+        }
+        #no{
+        position: relative;
+        bottom:8px;
+        font: bold 14px solid;
+        line-height:2;
+        }
+        #nolist{
+        position: absolute;
+        left: 310px;
+        top:125px;
+        font: bold 16px solid;
+        }
+        #product{
+        position:relative;
+        bottom:8px;
+        }
+        #category{
+        position: relative;
+        left: 4px;
+        }
+        #subject{
+        position: relative;
+        right: -60px;
+        bottom: 10px;
+        font: 14px solid;
+        }
+        #subject img{
+        position: relative;
+        top: 2px;
+        }
+        #name{
+        position: relative;
+        right: 220px;
+        bottom: 10px;
+        font: bold 14px solid;
+        }
+        #date{
+        position: relative;
+        right: 234px;
+        bottom: 10px;
+        font: bold 16px solid;
+        }
+        #search_button{
+        width:500px;
+        position: absolute;
+        bottom:240px;
+        left:260px;
+        }
+        #searchField{
+        background-color: #e0e0e0;
+        border: 1px solid #969691;
+        height:24px;
+        }
+        #searchWord{
+        border: 1px solid #969691;
+        height:20px;
+        }
+        #searchButton{
+        position:relative;
+        top:1px;
+        background-color: #e0e0e0;
+        border: 1px solid #969691;
+        height:24px;
+        }
+        #searchButton:hover{
+        background-color:gray;
+        color:white;
+        }
+        #total_rows{
+        font: bold 12px solid;
+        }
+        #page_list{
+        position:absolute;
+        left:-32px;
+        height: 50px;
+        bottom: -140px;
+        text-align: center;
+        }
+        #page_list a{
+        text-decoration: none;
+        color: black;
+        font: 14px Arial bold, sans-serif;
+        color:gray;
+        }
+        #click:hover{
+        color:blue;
+        }
+        footer{
+            width: 1247px; 
+            height: 40px;
+            margin-left: 0px;
+            position: absolute;
+            transform: translateY(-375%);
+            background: black;
+            top: 980px;
+        }
+        #footer{
+            top: 10px;
+            position: relative;
+            color: #ffffff;
+            font: 13px Arial;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow';
+            word-spacing: 4px;
+            text-align: center;
+        }
