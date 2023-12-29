@@ -8,6 +8,7 @@
 <jsp:setProperty name="sDto" property="*" />
 
 <c:set var="boardList" value="${dao.getBoards(sDto)}" />
+
 <!-- 
 <<페이지 네비게이션 구현을 위한 변수들>>
 1.총 게시물 수 : totalRows
@@ -78,6 +79,7 @@
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>조경진_게시판목록</title>
+    
     <link rel="stylesheet" href="../resources/css/list.css">
 </head>
 <body>
@@ -117,13 +119,11 @@
             <c:if test="${not empty boardList[i-1]}"><!-- boardList에 저장된 데이터가 있는 경우 출력 -->
                 <tr>
                     <td id="no">${i}&emsp;&nbsp;</td>
-                    <td id="product">${boardList[i-1].read_cnt}&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;</td>
+                    <td id="product"> 
+                            ${boardList[i-1].product}
+                            
                     <td id="category">
-                        <c:if test="${not empty boardList[i-1].originfile_name}">
-                            <a href="download.jsp?originfile_name=${boardList[i-1].originfile_name}&savefile_name=${boardList[i-1].savefile_name}">&emsp;&emsp;
-                                <img src="../resources/css/img/download.png" alt="첨부파일 이미지" width="15px" height="15px">
-                            </a>
-                        </c:if>
+                    ${boardList[i-1].category}
                     </td>
                         <td id="subject">
                        <a href="view.jsp?b_idx=${boardList[i-1].b_idx}"> ${boardList[i-1].title} <img src="../resources/css/img/new.PNG"> </a>
@@ -136,21 +136,7 @@
         </c:otherwise>
     </c:choose>
     <!-- 회원인 경우 페이지 네비게이션이 보여지도록 구현 -->
-                    <c:if test="${not empty boardList}">
-                    <tr>
-                    <td colspan="6" id="page_list">
-                    <%@ include file="paging.jsp" %>
-                    </td>
-                    </tr>
-                    </c:if>
-                    <!-- 회원인 경우 목록 하단에 글등록 버튼이 보여지도록 구현 -->
-                    <c:if test="${not empty member}">
-                    <tr>
-                    <td colspan="6">
-                    <a href="write.jsp"><input type="button" name= "WRITE" id="WRITE" value="WRITE"></a>
-                    </td>
-                    </tr>
-                    </c:if>
+                    
                     
                     <form>
                     <table id="search_button">
@@ -166,6 +152,22 @@
                 <input type="submit" id="searchButton"value="검색">
             </td>
         </tr>
+        
+        <c:if test="${not empty boardList}">
+                    <tr>
+                    <td colspan="6" id="page_list">
+                    <%@ include file="paging.jsp" %>
+                    </td>
+                    </tr>
+                    </c:if>
+                    <!-- 회원인 경우 목록 하단에 글등록 버튼이 보여지도록 구현 -->
+                    <c:if test="${not empty member}">
+                    <tr>
+                    <td colspan="6">
+                    <a href="write.jsp"><input type="button" name= "WRITE" id="WRITE" value="WRITE" style="transition:0.3s;"></a>
+                    </td>
+                    </tr>
+                    </c:if>
         </table>
         </form>
 </table>

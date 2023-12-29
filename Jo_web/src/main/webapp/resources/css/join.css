@@ -2,12 +2,16 @@
 /* PC용 CSS 기준: 1536px, rem */
 
   h1{font-size: 0;}
+        *{margin:0;
+          padding:0;
+        }
 
         #wrap{
             background: #e0e0e0;
             /* height: 970px; */ /* pc기준 1536px을 기준으로 정의함 */
-            height: 860px; /* (1536 * 90) / 100 = 1382.4px */
+            height: 887px; /* (1536 * 90) / 100 = 1382.4px */
             margin: 0 auto;
+            overflow: hidden;
             padding-top: 10px;
             position: relative;
         }
@@ -46,7 +50,7 @@
             align-self: flex-start;
             padding-top:200px;
             width: 233px;
-            margin-left: -264px;
+            margin-left: -231px;
         }
         ul li{
             list-style-type: none;
@@ -78,7 +82,7 @@
         label{
             font: bold 13px Arial, sans-serif; 
             position: relative;
-            bottom: 23px;
+            bottom: 10px;
             
         }
         input{
@@ -86,55 +90,58 @@
             width: 400px;
             height: 30px;
             padding-left: 8px;
-            margin-top: 0px;
+            margin-top: 10px;
             border: 1px solid #7a7a7a; 
             outline-width: 1px;
             outline-color: #000000;
         }
         #member_id{
             position: relative;
-            left: 0px;
-            top: -25px;
+            left: -1px;
+            top: -10px;
         }
         #member_pw{
             position: relative;
             left: -2px;
-            top: -25px;
+            top: -10px;
         }
         #confirm{
             position: relative;
-            top: -25px;
+            top: -10px;
             margin-bottom: 5px;
         }
         #member_name{
             position: relative;
-            top: -25px;
+            top: -10px;
         }
         #email{
             position: relative;
             left: -3px;
-            top: -25px;
+            top: -10px;
         }
         #handphone{
             position: relative;
-            top: -25px;
+            top: -10px;
         }
         #searchbutton{
             position: relative;
-            bottom: 25px;
+            height:32px;
+            right: 121px;
+            top: 37px;
+            padding-left:2px;
         }
         #address-1{
             position: relative;
             width: 100px;
             height: 30px;
-            right: 417px;
-            top: 15px;
+            right: 416px;
+            top: 37px;
         }
         #member_add{
             position: relative;
             width: 280PX;
             height: 30px;
-            bottom: 24px;
+            bottom: 10px;
             left: 267px;
         }
         #checkbox1{
@@ -144,7 +151,7 @@
             background-color: white;
             margin: 0 auto;
             left: -47px;
-            bottom: 68px;
+            bottom: 35px;
             box-sizing: border-box;
             position: relative;
             outline-width: 1px;
@@ -156,22 +163,23 @@
             width: 370px;
             position: relative;
             left: -50px;
-            bottom: 190px;
+            bottom: 209px;
         }
         input[type=checkbox] {
             position: relative;
             left: -22px;
-            bottom: 290px;
-            margin-bottom: 20px;
+            bottom: 280px;
+            margin-bottom: 10px;
             accent-color: lightgrey;
         }
         input[type=button] {
             float: right;
             position: relative;
             width: 100px;
-            height: 34px;
+            height: 32px;
             right: 120px;
-            bottom: 75px;
+            bottom: 52px;
+            padding-left: 2px;
             font: bold 12px solid;
             color: black;
             background-color: white;
@@ -181,7 +189,7 @@
             width: 140px;
             height: 41px;
             left: 164px;
-            top: 200px;
+            top: 260px;
             background-color: black;
             border: 1px solid black;
             border-radius: 20px;
@@ -197,7 +205,7 @@
             border: 1px solid black;
             border-radius: 20px;
             left: 253px;
-            top: 200px;
+            top: 260px;
             color: white;
             font: bold 14px solid;
             padding-bottom: 5px;
@@ -208,7 +216,7 @@
         .notice1 a{
             position: relative;
             left: 220px;
-            bottom: 475px;
+            bottom: 441px;
             font: bold 14px Arial, sans-serif;
             font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
@@ -218,13 +226,13 @@
         .notice2 a{
             position: relative;
             left: 220px;
-            bottom: 590px;
+            bottom: 560px;
             font: bold 12px Arial, sans-serif;
         }
         #notice4{
             position: relative;
             left: 390px;
-            bottom: 468px;
+            bottom: 460px;
         }
         #phone{
             width: 398px;
@@ -255,7 +263,7 @@
         #notice5{
             position: relative;
             left: 390px;
-            bottom: 492px;
+            bottom: 485px;
         }
         #completebox{
             position: relative;
@@ -282,16 +290,16 @@
         } 
         /* ---- footer 영역 ---- */
         footer{
-            width: 1247px; 
-            height: 40px;
+            width: 1280px; 
+            height: 45px;
             margin-left: 0px;
             position: absolute;
             transform: translateY(-375%);
             background: black;
-            top: 980px;
+            bottom: -180px;
         }
         #footer{
-            top: 10px;
+            top: 8px;
             position: relative;
             color: #ffffff;
             font: 13px Arial;

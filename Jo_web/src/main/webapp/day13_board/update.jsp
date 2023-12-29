@@ -32,15 +32,26 @@
                     <input type="hidden" value="${member.member_name}" disabled> <br>
                         <li><a href="#">제목&emsp;&emsp;&emsp;&emsp;</a></li>
                         <div id = "subject1">
-                        <select id= "list">
-                        <option value="product">상품</option>
-                        <option value="delivery">배송</option>
-                        <option value="exchange">교환/환불</option>
+                        <select id="category" name="category">
+                        <option value="상품" ${board.category == '상품' ? 'selected' : ''}>상품</option>
+                        <option value="배송" ${board.category == '배송' ? 'selected' : ''}>배송</option>
+                        <option value="교환/환불" ${board.category == '교환/환불' ? 'selected' : ''}>교환/환불</option>
+                        </select>
+                        </ul>
+                        </div>
+                        </div> 
+                        <div id = "subject2">
+                        <select id="product" name="product" id="product">
+                        <option value="코튼 치노 숏자켓 3C 61,000" ${board.product == '코튼 치노 숏자켓 3C 61,000' ? 'selected' : ''}>코튼 치노 숏자켓 3C 61,000</option>
+                        <option value="솔리드 코듀로이 가디건 4C 39,500" ${board.product == '솔리드 코듀로이 가디건 4C 39,500' ? 'selected' : ''}>솔리드 코듀로이 가디건 4C 39,500</option>
+                        <option value="그레이시 더블 데님팬츠 55,000" ${board.product == '그레이시 더블 데님팬츠 55,000' ? 'selected' : ''}>그레이시 더블 데님팬츠 55,000</option>
+                        <option value="크롬 앙고라 트랙니트 2C 62,000" ${board.product == '크롬 앙고라 트랙니트 2C 62,000' ? 'selected' : ''}>크롬 앙고라 트랙니트 2C 62,000</option>
+                        <option value="푸퍼 마이크로 숏패딩 4C 49,500" ${board.product == '푸퍼 마이크로 숏패딩 4C 49,500' ? 'selected' : ''}>푸퍼 마이크로 숏패딩 4C 49,500</option>
+                        <option value="코드 와이드 카코팬츠 3C 44,000" ${board.product == '코드 와이드 카코팬츠 3C 44,000' ? 'selected' : ''}>코드 와이드 카코팬츠 3C 44,000</option>
                         </select>
                         </ul>
                         </div> 
-                        </div>
-                    <div id = "subject2"><input type="text" name="title" id="title" value="${board.title}"></div>
+                    <div id = "subject3"><input type="text" name="title" id="title" value="${board.title}"></div>
 
                         <select id= "sub_menu1">
                         <li><option value="font1">표준</a></option>

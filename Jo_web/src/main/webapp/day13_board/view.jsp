@@ -41,6 +41,8 @@ ${dao.updateRead_cnt(b_idx)}
 <div id="read_box"></div>
 <div id="title">${board.title}</div>
 <div id="name">${board.writer}</div>
+<div id="product">${board.product}</div>
+<div id="category">${board.category}</div>
 <div id="date">DATE&emsp;${board.post_date}</div>
 <div id="content">${board.content}</div>
 <%-- 조회수: ${board.read_cnt} <br> --%>

@@ -106,14 +106,31 @@ a{
             left:1px;
             bottom:3px; 
 }
-        #title{
-            position: absolute;
-            width:300px;
-            height:20px;
-            left:588px;
-            bottom:631px;
-            background-color: #e0e0e0;
-            border: 1px solid #969691;
+#title{
+    position: absolute;
+    width:300px;
+    height:20px;
+    left:822px;
+    bottom:631px;
+    background-color: #e0e0e0;
+    border: 1px solid #969691;
+}
+#category{
+    width:182px;
+    height:24px;
+    position: absolute;
+    bottom:20px;
+    background-color: #e0e0e0;
+    border: 1px solid #969691;
+}
+#product{
+    width:215px;
+    height:24px;
+    position: absolute;
+    top:225px;
+    left:588px;
+    background-color: #e0e0e0;
+    border: 1px solid #969691;
 }
 #list{
     width:182px;
@@ -216,7 +233,7 @@ input[type=button]:hover{
     input[type=submit]{
     position:relative;
     bottom:160px;
-    left:937px;
+    left:935px;
     width:70px;
     height:30px;
     background-color:black;
@@ -232,7 +249,7 @@ input[type=submit]:hover{
 input[type=reset]{
     position:relative;
     bottom:160px;
-    left:942px;
+    left:940px;
     width:70px;
     height:30px;
     background-color:#e0e0e0;

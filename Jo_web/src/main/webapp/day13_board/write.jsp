@@ -28,15 +28,25 @@
                     <input type="hidden" value="${member.member_name}">
                         <li><a href="#">제목&emsp;&emsp;&emsp;&emsp;</a></li>
                         <div id = "subject1">
-                        <select id= "list">
-                        <option value="product">상품</option>
-                        <option value="delivery">배송</option>
-                        <option value="exchange">교환/환불</option>
+                        <select id="category" name="category">
+                        <option value="상품">상품</option>
+                        <option value="배송">배송</option>
+                        <option value="교환/환불">교환/환불</option>
                         </select>
                         </ul>
                         </div> 
-                        </div>
-                        <div id = "subject2"><input type="text" name="title" id="title"></div>
+                        <div id = "subject2">
+                        <select id="product" name="product">
+                        <option value="코튼 치노 숏자켓 3C 61,000">코튼 치노 숏자켓 3C 61,000</option>
+                        <option value="솔리드 코듀로이 가디건 4C 39,500">솔리드 코듀로이 가디건 4C 39,500</option>
+                        <option value="그레이시 더블 데님팬츠 55,000">그레이시 더블 데님팬츠 55,000</option>
+                        <option value="크롬 앙고라 트랙니트 2C 62,000">크롬 앙고라 트랙니트 2C 62,000</option>
+                        <option value="푸퍼 마이크로 숏패딩 4C 49,500">푸퍼 마이크로 숏패딩 4C 49,500</option>
+                        <option value="코드 와이드 카코팬츠 3C 44,000">코드 와이드 카코팬츠 3C 44,000</option>
+                        </select>
+                        </ul>
+                        </div> 
+                        <div id = "subject3"><input type="text" name="title" id="title"></div>
                         
                         <select id= "sub_menu1">
                         <li><option value="font1">표준</a></option>

@@ -15,27 +15,31 @@ public class BoardDAO extends DBConnection {
 		try {
 			if(dto.getOriginfile_name() != null) {
 			//파일업로드가 이루어질 경우의 insert문
-			String sql="insert into pj_board(b_idx, m_idx, writer, title, content, originfile_name, savefile_name) "
-						+ "values(board_seq.nextval, ?,?,?,?,?,?)";
+			String sql="insert into pj_board(b_idx, m_idx, writer, category, product, title, content, originfile_name, savefile_name) "
+						+ "values(board_seq.nextval, ?,?,?,?,?,?,?,?)";
 			
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setInt(1, dto.getM_idx());
 			pstmt.setString(2, dto.getWriter());
-			pstmt.setString(3, dto.getTitle());
-			pstmt.setString(4, dto.getContent());
-			pstmt.setString(5, dto.getOriginfile_name());
-			pstmt.setString(6, dto.getSavefile_name());
+			pstmt.setString(3, dto.getCategory());
+			pstmt.setString(4, dto.getProduct());
+			pstmt.setString(5, dto.getTitle());
+			pstmt.setString(6, dto.getContent());
+			pstmt.setString(7, dto.getOriginfile_name());
+			pstmt.setString(8, dto.getSavefile_name());
 			
 			}else {
 				// 파일 업로드가 이루어지지 않은 경우 insert문
-				String sql = "insert into pj_board (b_idx, m_idx, writer, title, content) "
-						+ " values(board_seq.nextval, ?, ?, ?, ?)";
+				String sql = "insert into pj_board (b_idx, m_idx, writer, category, product, title, content) "
+						+ " values(board_seq.nextval, ?, ?, ?, ?, ?, ?)";
 
 				pstmt = conn.prepareStatement(sql);
 				pstmt.setInt(1, dto.getM_idx());
 				pstmt.setString(2, dto.getWriter());
-				pstmt.setString(3, dto.getTitle());
-				pstmt.setString(4, dto.getContent());
+				pstmt.setString(3, dto.getCategory());
+				pstmt.setString(4, dto.getProduct());
+				pstmt.setString(5, dto.getTitle());
+				pstmt.setString(6, dto.getContent());
 			}
 			
 			result = pstmt.executeUpdate();//executeUpdate() 실행 결과 적용된 행의 수 반환
@@ -65,6 +69,8 @@ public class BoardDAO extends DBConnection {
 				dto.setB_idx(rs.getInt("b_idx"));
 				dto.setM_idx(rs.getInt("m_idx"));
 				dto.setWriter(rs.getString("writer"));
+				dto.setCategory(rs.getString("category"));
+				dto.setProduct(rs.getString("product"));
 				dto.setTitle(rs.getString("title"));
 				dto.setContent(rs.getString("content"));
 				dto.setPost_date(rs.getDate("post_date"));
@@ -122,6 +128,8 @@ public class BoardDAO extends DBConnection {
 				dto.setB_idx(rs.getInt("b_idx"));
 				dto.setM_idx(rs.getInt("m_idx"));
 				dto.setWriter(rs.getString("writer"));
+				dto.setCategory(rs.getString("category"));
+				dto.setProduct(rs.getString("product"));
 				dto.setTitle(rs.getString("title"));
 				dto.setContent(rs.getString("content"));
 				dto.setPost_date(rs.getDate("post_date"));
@@ -173,6 +181,8 @@ public class BoardDAO extends DBConnection {
 				dto.setB_idx(rs.getInt("b_idx"));
 				dto.setM_idx(rs.getInt("m_idx"));
 				dto.setWriter(rs.getString("writer"));
+				dto.setCategory(rs.getString("category"));
+				dto.setProduct(rs.getString("product"));
 				dto.setTitle(rs.getString("title"));
 				dto.setContent(rs.getString("content"));
 				dto.setPost_date(rs.getDate("post_date"));
@@ -196,26 +206,30 @@ public class BoardDAO extends DBConnection {
 		try {
 				if(dto.getOriginfile_name() != null) {
 					// 파일 업로드가 이루어질 경우 Update문
-					String sql = "update pj_board set title=?, content=?, originfile_name=?, savefile_name=? "
+					String sql = "update pj_board set category=?, product=?, title=?, content=?, originfile_name=?, savefile_name=? "
 							+" where b_idx=?";
 
 					pstmt = conn.prepareStatement(sql);
-					pstmt.setString(1, dto.getTitle());
-					pstmt.setString(2, dto.getContent());
-					pstmt.setString(3, dto.getOriginfile_name());
-					pstmt.setString(4, dto.getSavefile_name());
-					pstmt.setInt(5, dto.getB_idx());
+					pstmt.setString(1, dto.getCategory());
+					pstmt.setString(2, dto.getProduct());
+					pstmt.setString(3, dto.getTitle());
+					pstmt.setString(4, dto.getContent());
+					pstmt.setString(5, dto.getOriginfile_name());
+					pstmt.setString(6, dto.getSavefile_name());
+					pstmt.setInt(7, dto.getB_idx());
 
 
 				} else {
 					// 파일 업로드가 이루어지지 않은 경우 Update문
-					String sql = "update pj_board set title=?, content=? "
-							+" where b_idx=?)";
+					String sql = "update pj_board set category=?, product=?, title=?, content=? "
+							+" where b_idx=?";
 
 					pstmt = conn.prepareStatement(sql);
-					pstmt.setString(1, dto.getTitle());
-					pstmt.setString(2, dto.getContent());
-					pstmt.setInt(3, dto.getB_idx());
+					pstmt.setString(1, dto.getCategory());
+					pstmt.setString(2, dto.getProduct());
+					pstmt.setString(3, dto.getTitle());
+					pstmt.setString(4, dto.getContent());
+					pstmt.setInt(5, dto.getB_idx());
 				}
 			
 			result = pstmt.executeUpdate(); // executeUpdate() 실행 결과 적용된 행의 수 반환

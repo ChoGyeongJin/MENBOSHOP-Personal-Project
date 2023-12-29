@@ -34,6 +34,8 @@
 		//BoardDTO에 세팅할 값 가져오기: MultipartRequest객체를 이용함
 		String writer = mRequest.getParameter("writer");
 		String title = mRequest.getParameter("title");
+		String category = mRequest.getParameter("category");
+		String product = mRequest.getParameter("product");
 		String content = mRequest.getParameter("content");
 		int m_idx = Integer.parseInt(mRequest.getParameter("m_idx"));
 		int b_idx = Integer.parseInt(mRequest.getParameter("b_idx"));
@@ -42,6 +44,8 @@
 		BoardDTO dto = new BoardDTO();
 		dto.setWriter(writer);
 		dto.setTitle(title);
+		dto.setCategory(category);
+		dto.setProduct(product);
 		dto.setContent(content);
 		dto.setM_idx(m_idx);
 		dto.setB_idx(b_idx);

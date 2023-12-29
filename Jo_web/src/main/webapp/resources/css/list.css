@@ -123,11 +123,10 @@ h1{font-size: 0;}
             height: 41px;
             background-color: black;
             border: 1px solid black;
-            right: 382px;
-            bottom: px;
+            left: 763px;
+            bottom: -75px;
             color: white;
             font: bold 15px solid;
-            padding-bottom: 5px;
         }
         input[type=button]:hover {
             background-color:white;
@@ -151,8 +150,10 @@ h1{font-size: 0;}
         }
         #no{
         position: relative;
-        bottom:8px;
+        bottom:9px;
+        right:13px;
         font: bold 14px solid;
+        text-align: center;
         line-height:2;
         }
         #nolist{
@@ -163,17 +164,22 @@ h1{font-size: 0;}
         }
         #product{
         position:relative;
-        bottom:8px;
+        padding-left:45px;
+        bottom:9px;
+        font: bold 12px Arial;
         }
         #category{
         position: relative;
-        left: 4px;
+        right: 171px;
+        bottom:10px;
+        font: 14px solid;
+        text-align:center;
         }
         #subject{
         position: relative;
-        right: -60px;
+        right: 160px;
         bottom: 10px;
-        font: 14px solid;
+        font: bold 14px solid;
         }
         #subject img{
         position: relative;
@@ -181,13 +187,13 @@ h1{font-size: 0;}
         }
         #name{
         position: relative;
-        right: 220px;
+        right: 312px;
         bottom: 10px;
-        font: bold 14px solid;
+        font: 14px solid;
         }
         #date{
         position: relative;
-        right: 234px;
+        right: 297px;
         bottom: 10px;
         font: bold 16px solid;
         }
@@ -222,7 +228,7 @@ h1{font-size: 0;}
         }
         #page_list{
         position:absolute;
-        left:-32px;
+        left:2px;
         height: 50px;
         bottom: -140px;
         text-align: center;

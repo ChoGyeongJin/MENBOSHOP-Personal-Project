@@ -96,13 +96,27 @@ a{
         left:520px;
         font: bold 12px Arial;
         }
-        #date{
+        #category{
         position:absolute;
         bottom:601px;
         left:620px;
         font: bold 12px Arial;
         }
+        #product{
+        position:absolute;
+        bottom:601px;
+        left:690px;
+        font: bold 12px Arial;
+        }
+        #date{
+        position:absolute;
+        bottom:601px;
+        left:900px;
+        font: bold 12px Arial;
+        }
         #content{
+        width: 820px;
+        word-wrap: break-word;
         position:absolute;
         bottom:550px;
         left:300px;

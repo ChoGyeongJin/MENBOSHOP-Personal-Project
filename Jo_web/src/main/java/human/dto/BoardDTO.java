@@ -5,7 +5,7 @@ import java.util.Date;
 public class BoardDTO {
 	private int b_idx; //게시글 번호
 	private int m_idx; //회원 번호
-	private String writer;
+	private String writer;//작성자
 	private String title; //제목
 	private String content; //내용
 	private String originfile_name; //원본 파일명
@@ -14,7 +14,21 @@ public class BoardDTO {
 	private Date post_date; //작성일
 	private Date update_date; //수정일
 	private int del_or_not; //삭제 여부
+	private String category;
+	private String product;
 	
+	public String getProduct() {
+		return product;
+	}
+	public void setProduct(String product) {
+		this.product = product;
+	}
+	public String getCategory() {
+		return category;
+	}
+	public void setCategory(String category) {
+		this.category = category;
+	}
 	public int getB_idx() {
 		return b_idx;
 	}
