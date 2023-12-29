@@ -146,6 +146,8 @@ public class MemberDAO extends DBConnection{
 	
 	
 	public MemberDTO login(String member_id, String member_pw) throws SQLException{
+		System.out.println("login()메소드 실행");
+		
 		MemberDTO dto=null;
 		
 		String sql = "select m_idx from pj_member where member_id=? and member_pw=?";
