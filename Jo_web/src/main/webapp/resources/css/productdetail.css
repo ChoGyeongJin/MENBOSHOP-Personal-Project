@@ -1,0 +1,316 @@
+@charset "UTF-8";
+
+        h1{font-size: 0;}
+        *{margin:0;
+          padding:0;
+        }
+        #wrap{
+            background: #e0e0e0;
+            /* height: 970px; */ /* pc기준 1536px을 기준으로 정의함 */
+            height: 887px; /* (1536 * 90) / 100 = 1382.4px */
+            margin: 0 auto;
+            overflow-x: hidden;
+            padding-top: 10px;
+            position: relative;
+        }
+        header{
+            display: flex; /* flex 사용 */
+            flex-direction: row; /* header 영역에 해당하는 요소는 왼쪽부터 오른쪽으로 가로방향 */
+            justify-content: flex-start;
+            width: 100%;
+            height: 385px;
+        }
+        #info-menu{
+            align-self: flex-end;
+            width: 21.7%; /* (300 / 1382.4) * 100 = 21.7%  */
+            height: 30px;
+            font: bold 1.125rem Arial, sans-serif; /* 1rem = 16px , 1.125rem = 18px */
+            text-align: center;
+            position: relative;
+            top: -270px;
+            left: 920px;
+        }
+        #smalllogo{
+            width: 200px; 
+            height: 70px;
+            display: inline-block;
+            background-image: url("img/small_logo.PNG");
+            background-size: 100% 80px;
+            position: absolute;
+            top: 70px;
+            left: 540px;
+        }
+        a{
+            text-decoration: none;
+            color: #000000;
+        }
+        #left-menu{
+            align-self: flex-start;
+            padding-top:200px;
+            width: 233px;
+            margin-left: -227px;
+        }
+        #left-menu ul li{
+            list-style-type: none;
+        }
+
+        #left-menu ul li a{
+            font: bold 18px Arial, sans-serif;
+            line-height: 30px;
+            text-decoration-line: none;
+            font: bold;
+            color: black;
+        }
+        #left-menu ul li a:hover{
+            color: #969691;
+        }
+        #sub_menu{
+            position:absolute;
+            top:390px;
+            left:70px;
+        }
+        #sub_menu ul li{
+            list-style-type: none;        
+        }
+        #sub_menu ul li a{
+            display:block;
+            transition: all 0.5s ease-out;
+            font: bold 12px Arial, sans-serif;
+            line-height: 25px;
+            text-decoration-line: none;
+            color: gray;
+        }
+        #sub_menu ul li a:hover{
+        transform: translateX(10px);
+        }
+        #d_img{
+        position:absolute;
+        left:280px;
+        bottom:150px;
+        }
+        #p1{
+        font: bold 20px 'Lato', 'Noto Sans KR', sans-serif;
+        color: black;
+        position: absolute;
+        left:750px;
+        bottom:680px;
+        }
+        #m1{
+        font: bold 16px 'Lato', 'Noto Sans KR', sans-serif;
+        color: black;
+        position:absolute;
+        left:750px;
+        bottom:620px;
+        }
+        #d1{
+        font: bold 11px 'Lato', 'Noto Sans KR', sans-serif;
+        color: black;
+        position:absolute;
+        left:750px;
+        bottom:560px;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 5px;
+        }
+        #text1{
+        font: 12px 'Lato', 'Noto Sans KR', sans-serif;
+        color: gray;
+        position:absolute;
+        left:750px;
+        bottom:370px;
+        }
+        #color{
+        width:160px;
+        height:40px;
+        position:absolute;
+        left:750px;
+        bottom:290px;
+        background-color:#CCCCCC;
+        border:1px solid lightgray;
+        appearance:none;
+        font: bold 13px 'Lato', 'Noto Sans KR', sans-serif;
+        color: black;
+        }
+        #col{
+        font: 13px 'Lato', 'Noto Sans KR', sans-serif;
+        color: black;
+        }
+        #black{
+        font: 13px 'Lato', 'Noto Sans KR', sans-serif;
+        color: black;
+        }
+        #ivory{
+        font: 13px 'Lato', 'Noto Sans KR', sans-serif;
+        color: black;
+        }
+        #navy{
+        font: 13px 'Lato', 'Noto Sans KR', sans-serif;
+        color: black;
+        }
+        #M{
+        background-color:white;
+        width:30px;
+        height:30px;
+        position:absolute;
+        left:917px;
+        bottom:300px;
+        border: 1px lightgray solid;
+        font: bold 12px 'Lato', 'Noto Sans KR', sans-serif;
+        color: black;
+        }
+        #M:active, #M:focus{
+        border: 1px black solid;
+        }
+        #L{
+        background-color:white;
+        width:30px;
+        height:30px;
+        position:absolute;
+        left:952px;
+        bottom:300px;
+        border: 1px lightgray solid;
+        font: bold 12px 'Lato', 'Noto Sans KR', sans-serif;
+        color: black;
+        }
+        #L:active, #L:focus{
+        border: 1px black solid;
+        }
+        #introduce{
+        position:relative;
+        left:750px;
+        bottom:-240px;
+        }
+        #text2{
+        font: bold 12px 'Lato', 'Noto Sans KR', sans-serif;
+        color: black;
+        }
+        #text3{
+        font: 12px 'Lato', 'Noto Sans KR', sans-serif;
+        color: gray;
+        }
+        #name{
+        position:absolute;
+        width:20px;
+        left:945px;
+        bottom:240px;
+        background-color:#e0e0e0;
+        border:none;
+        }
+        #up_btn{
+        border:none;
+        background-color:#e0e0e0;
+        position:absolute;
+        left:975px;
+        bottom:247px;
+        }
+        #down_btn{
+        border:none;
+        background-color:#e0e0e0;
+        position:absolute;
+        left:975px;
+        bottom:232px;
+        }
+        #result{
+        font: 12px 'Lato', 'Noto Sans KR', sans-serif;
+        color: black;
+        position:absolute;
+        left:750px;
+        bottom:190px;
+        }
+        #line{
+            border-top: 2px solid black;
+            margin: 30px auto;
+            width: 350px;
+            position:absolute;
+            left:750px;
+            bottom:150px;
+        }
+        #box{
+            position: absolute;
+            width: 348px;
+            height: 30px;
+            background-color: black;
+            border: 1px solid black;
+            left: 750px;
+            bottom: 120px;
+            color: white;
+            font: 13px 'Lato', 'Noto Sans KR', sans-serif;
+            text-align:center;
+            padding-top:10px;
+        }
+        #d_1{
+        position:absolute;
+        top:900px;
+        left:380px;
+        }
+        #sub1{
+        position:relative;
+        top:1300px;
+        left:485px;
+        font: 28px 'Lato', 'Noto Sans KR', sans-serif;
+        }
+        #di1{
+        position:relative;
+        top:1320px;
+        left:-5px;
+        font: 15px 'Lato', 'Noto Sans KR', sans-serif;
+        text-align:center;
+        }
+        #l1{
+            left:435px;
+            width:440px;
+            height:545px;
+            top:1900px;
+            position:absolute;
+        }
+        #black{
+            left:610px;
+            top:2500px;
+            position:absolute;
+            font: bold 20px 'Lato', 'Noto Sans KR', sans-serif;
+        }
+        #di2{
+        position:absolute;
+        top:2600px;
+        left:358px;
+        }
+        #brown{
+            left:610px;
+            top:3470px;
+            position:absolute;
+            font: bold 20px 'Lato', 'Noto Sans KR', sans-serif;
+        }
+        #di3{
+        position:absolute;
+        top:3570px;
+        left:358px;
+        }
+        #ivory{
+            left:610px;
+            top:4440px;
+            position:absolute;
+            font: bold 20px 'Lato', 'Noto Sans KR', sans-serif;
+        }
+        #di4{
+        position:absolute;
+        top:4540px;
+        left:358px;
+        }
+        footer{
+            width: 1280px; 
+            height: 34px;
+            margin-left: 0px;
+            position: absolute;
+            transform: translateY(-375%);
+            background: black;
+            top: 5600px;
+        }
+        #footer{
+            top: 8px;
+            position: relative;
+            color: #ffffff;
+            font: 13px Arial;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow';
+            word-spacing: 4px;
+            text-align: center;
+        }

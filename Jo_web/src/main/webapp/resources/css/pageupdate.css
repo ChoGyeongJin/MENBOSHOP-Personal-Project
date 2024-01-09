@@ -1,12 +1,15 @@
 @charset "UTF-8";
 
 h1{font-size: 0;}
+*{margin:0;
+  padding:0;}
 
 #wrap{
     background: #e0e0e0;
     /* height: 970px; */ /* pc기준 1536px을 기준으로 정의함 */
-    height: 860px; /* (1536 * 90) / 100 = 1382.4px */
+    height: 887px; /* (1536 * 90) / 100 = 1382.4px */
     margin: 0 auto;
+    overflow: hidden;
     padding-top: 10px;
     position: relative;
 }
@@ -45,7 +48,7 @@ a{
             align-self: flex-start;
             padding-top:200px;
             width: 233px;
-            margin-left: -264px;
+            margin-left: -231px;
         }
         #left-menu ul li{
             list-style-type: none;
@@ -65,42 +68,42 @@ a{
         #line1{
             border-top: 2px solid #969691;
             margin: 30px auto;
-            width: 900px;
+            width: 894px;
             position: relative;
-            left: 90px;
-            bottom: 223px;
+            left: 72px;
+            bottom: 203px;
 }
-        #line2{
+#line2{
             border-top: 2px solid #969691;
             margin: 30px auto;
-            width: 900px;
+            width: 894px;
             position: relative;
-            left: 90px;
-            bottom: 200px;
+            left: 72px;
+            bottom: 180px;
 }
-        #line3{
+#line3{
             border-left: 2px solid #969691;
             height: 55px;
             position: relative;
             left: 360px;
-            bottom: 285px;
+            bottom: 265px;
         }
-        #subject {
+#subject {
             list-style: none;
             position: relative;
-            left: 250px;
-            bottom: 320px;
+            left: 290px;
+            bottom: 283px;
 }
-        #subject ul {
+#subject ul {
             list-style: none;
 }
-        #subject ul li {
+#subject ul li {
             float: left;
             position: relative;
             bottom: 40px;
             left: 5px;
 }
-        #subject ul li a{
+#subject ul li a{
             font: 15px Arial, sans-serif;
             position:relative;
             left:1px;
@@ -109,9 +112,10 @@ a{
 #title{
     position: absolute;
     width:300px;
-    height:20px;
-    left:822px;
-    bottom:631px;
+    height:22px;
+    left:814px;
+    bottom:635px;
+    padding-left:4px;
     background-color: #e0e0e0;
     border: 1px solid #969691;
 }
@@ -127,26 +131,17 @@ a{
     width:215px;
     height:24px;
     position: absolute;
-    top:225px;
-    left:588px;
+    top:238px;
+    left:580px;
     background-color: #e0e0e0;
     border: 1px solid #969691;
-}
-#list{
-    width:182px;
-    height:24px;
-    position: absolute;
-    bottom:20px;
-    background-color: #e0e0e0;
-    border: 1px solid #969691;
-    
 }
 #sub_menu1{
     width:120px;
     height:24px;
     position: absolute;
-    left:283px;
-    bottom:572px;
+    left:275px;
+    bottom:570px;
     background-color: #e0e0e0;
     border: 1px solid #969691;
     z-index: 1;
@@ -155,8 +150,8 @@ a{
     width:160px;
     height:24px;
     position: absolute;
-    left:419px;
-    bottom:572px;
+    left:411px;
+    bottom:570px;
     background-color: #e0e0e0;
     border: 1px solid #969691;
     z-index: 1;
@@ -165,16 +160,16 @@ a{
     width:60px;
     height:24px;
     position: absolute;
-    left:597px;
-    bottom:572px;
+    left:589px;
+    bottom:570px;
     background-color: #e0e0e0;
     border: 1px solid #969691;
     z-index: 1;
 }
 #bold{
     position:absolute;
-    left:671px;
-    bottom:568px;
+    left:663px;
+    bottom:566px;
     z-index: 1;
 }
 #bold a{
@@ -182,17 +177,18 @@ a{
 }
 #content_box1{
     position:absolute;
-    left:273px;
-    bottom:222px;
+    left:265px;
+    bottom:220px;
 }
 textarea{
+	padding-top: 5px;
     background-color: #e0e0e0;
     z-index: -1;
 }
 #content_box2{
     position:absolute;
-    left:283px;
-    bottom:232px;
+    left:275px;
+    bottom:230px;
     z-index: 2;
 }
 #line4{
@@ -200,24 +196,24 @@ textarea{
             margin: 30px auto;
             width: 880px;
             position: absolute;
-            right: 102px;
-            bottom: 534px;
+            right: 128px;
+            bottom: 530px;
 }
 #upload{
     font: 13px solid;
     position:relative;
-    left:263px;
-    bottom:210px;
+    left:173px;
+    top:119px;
 }
 #new_upload{
 	font:bold 10px solid;
 	position:absolute;
-	left:272px;
+	left:263px;
 	bottom:170px;
 }
 input[type=button]{
     position:relative;
-    bottom:160px;
+    top:159px;
     left:263px;
     width:70px;
     height:30px;
@@ -229,11 +225,12 @@ input[type=button]{
 input[type=button]:hover{
     background-color:gray;
     color:white;
+    transition:0.3s;
     }
-    input[type=submit]{
+input[type=submit]{
     position:relative;
-    bottom:160px;
-    left:935px;
+    top:159px;
+    left:931px;
     width:70px;
     height:30px;
     background-color:black;
@@ -245,11 +242,12 @@ input[type=submit]:hover{
     background-color:white;
     color:black;
     border:1px black solid;
+    transition:0.3s;
     }
 input[type=reset]{
     position:relative;
-    bottom:160px;
-    left:940px;
+    top:159px;
+    left:936px;
     width:70px;
     height:30px;
     background-color:#e0e0e0;
@@ -260,19 +258,20 @@ input[type=reset]{
 input[type=reset]:hover{
     background-color:gray;
     color:white;
+    transition:0.3s;
 }
         
         footer{
-            width: 1247px; 
-            height: 40px;
+            width: 1280px; 
+            height: 45px;
             margin-left: 0px;
             position: absolute;
             transform: translateY(-375%);
             background: black;
-            top: 988px;
+            bottom: -180px;
         }
         #footer{
-            top: 10px;
+            top: 8px;
             position: relative;
             color: #ffffff;
             font: 13px Arial;

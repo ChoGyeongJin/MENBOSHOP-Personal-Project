@@ -20,7 +20,7 @@
  <div id="weekly-best">
     <b href="#">WEEKLY BEST</b>
  </div>
- <div id="weekly-best-logo1"></div>
+ <a href="../day13_board/productdetail.jsp"><div id="weekly-best-logo1"></div></a>
  <div id="weekly-best-logo2"></div>
  <div id="new-product">
     <b href="#">NEW PRODUCT 7%</b>
@@ -37,7 +37,7 @@
  </div>
  <div id="review-logo"></div>
  <div id="menu-control"></div>
-<div id="weekly-best-detail-1">
+ <div id="weekly-best-detail-1">
         <b id="detail-1"></id>코튼 치노 숏자켓 3C</b>
         <b id="detail-2">KRW 61,000</b>
 </div>

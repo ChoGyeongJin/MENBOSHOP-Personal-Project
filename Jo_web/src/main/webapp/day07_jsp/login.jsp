@@ -39,11 +39,12 @@
                         </td>
                     </tr>
         </table>
-    </form>
+    
     <div id = "checkbox"></div>
     <div class = "id_checkbox">
         <form method="get" action="form-action.html">
-            <label><input type="checkbox" name="idcheckbox" id="idcheckbox" value="idcheckbox"></label>
+            <label><input type="checkbox" name="idcheckbox" id="idcheckbox" value="idcheckbox"
+            ${empty cookie.member_id.value ? "":"checked"}></label>
         </form>
     </div>
     <div id = "remember">
@@ -54,6 +55,7 @@
             <a href="#">비밀번호 찾기</a>
             <a href="../day07_jsp/join.jsp">회원가입</a>
     </div>
+    </form>
 </section>
 
  ${j_footer}

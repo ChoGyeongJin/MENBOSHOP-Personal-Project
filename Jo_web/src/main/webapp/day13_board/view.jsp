@@ -45,8 +45,9 @@ ${dao.updateRead_cnt(b_idx)}
 <div id="category">${board.category}</div>
 <div id="date">DATE&emsp;${board.post_date}</div>
 <div id="content">${board.content}</div>
-<%-- 조회수: ${board.read_cnt} <br> --%>
-<div id="file">첨부파일1&emsp;${board.originfile_name}</div> 
+<%-- <div id="read_cnt">VIEW&emsp;${board.read_cnt}</div> --%>
+<div id="file">첨부파일1&emsp;${board.originfile_name}</div>
+<div id="image"><img src="../uploads/${board.savefile_name}" width="200px" height="250px"></div> 
 
 <!-- 수정하기, 삭제하기 버튼은 회원이면서 본인이 작성한 게시글일 때 화면에 출력되도록 함 -->
 <c:if test="${(not empty member) and (member.m_idx eq board.m_idx)}">

@@ -131,11 +131,11 @@
             padding-left:2px;
         }
         #address-1{
-            position: relative;
+            position: absolute;
             width: 100px;
             height: 30px;
-            right: 416px;
-            top: 37px;
+            right: 543px;
+            top: 121px;
         }
         #member_add{
             position: relative;
@@ -195,7 +195,8 @@
             border-radius: 20px;
             color: white;
             font: bold 14px solid;
-            padding-bottom: 5px;
+            padding-left: 2px;
+            padding-bottom:2px;
         }
         input[type=reset] {
             position: relative;
@@ -205,10 +206,10 @@
             border: 1px solid black;
             border-radius: 20px;
             left: 253px;
-            top: 260px;
+            top: 259px;
             color: white;
             font: bold 14px solid;
-            padding-bottom: 5px;
+            padding-bottom: 4px;
         }
         .notice1 {
             line-height: 50px;

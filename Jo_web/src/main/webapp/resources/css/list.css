@@ -1,12 +1,16 @@
 @charset "UTF-8";
 
 h1{font-size: 0;}
+*{margin:0;
+  padding:0;
+  }
 
          #wrap{
             background: #e0e0e0;
             /* height: 970px; */ /* pc기준 1536px을 기준으로 정의함 */
-            height: 860px; /* (1536 * 90) / 100 = 1382.4px */
+            height: 887px; /* (1536 * 90) / 100 = 1382.4px */
             margin: 0 auto;
+            overflow: hidden;
             padding-top: 10px;
             position: relative;
         }
@@ -45,7 +49,7 @@ h1{font-size: 0;}
             align-self: flex-start;
             padding-top:200px;
             width: 233px;
-            margin-left: -264px;
+            margin-left: -231px;
         }
         #left-menu ul li{
             list-style-type: none;
@@ -65,7 +69,7 @@ h1{font-size: 0;}
         #board_list {
             list-style: none;
             position: relative;
-            left: 250px;
+            left: 295px;
             bottom: 300px;
         }
         #board_list ul {
@@ -115,7 +119,7 @@ h1{font-size: 0;}
             width: 900px;
             position: relative;
             left: 90px;
-            top: 100px;
+            top: 140px;
         }
         input[type=button] {
             position: absolute;
@@ -123,8 +127,8 @@ h1{font-size: 0;}
             height: 41px;
             background-color: black;
             border: 1px solid black;
-            left: 763px;
-            bottom: -75px;
+            left: 779px;
+            bottom: -50px;
             color: white;
             font: bold 15px solid;
         }
@@ -146,11 +150,11 @@ h1{font-size: 0;}
         position: relative;
         width:1250px;
         left:295px;
-        bottom:270px;
+        bottom:265px;
         }
         #no{
         position: relative;
-        bottom:9px;
+        bottom:15px;
         right:13px;
         font: bold 14px solid;
         text-align: center;
@@ -164,21 +168,21 @@ h1{font-size: 0;}
         }
         #product{
         position:relative;
-        padding-left:45px;
-        bottom:9px;
+        padding-left:12px;
+        bottom:14px;
         font: bold 12px Arial;
         }
         #category{
         position: relative;
-        right: 171px;
-        bottom:10px;
+        right: 161px;
+        bottom:14px;
         font: 14px solid;
         text-align:center;
         }
         #subject{
         position: relative;
-        right: 160px;
-        bottom: 10px;
+        right: 158px;
+        bottom: 14px;
         font: bold 14px solid;
         }
         #subject img{
@@ -187,72 +191,81 @@ h1{font-size: 0;}
         }
         #name{
         position: relative;
-        right: 312px;
-        bottom: 10px;
+        right: 317px;
+        bottom: 14px;
         font: 14px solid;
         }
         #date{
         position: relative;
-        right: 297px;
-        bottom: 10px;
+        right: 298px;
+        bottom: 14px;
         font: bold 16px solid;
         }
         #search_button{
         width:500px;
         position: absolute;
-        bottom:240px;
+        bottom:200px;
         left:260px;
         }
         #searchField{
         background-color: #e0e0e0;
         border: 1px solid #969691;
-        height:24px;
+        height:25px;
+        bottom:30px;
+        position:relative;
         }
         #searchWord{
         border: 1px solid #969691;
-        height:20px;
+        height:23px;
+        bottom:30px;
+        position:relative;
         }
         #searchButton{
         position:relative;
-        top:1px;
         background-color: #e0e0e0;
         border: 1px solid #969691;
-        height:24px;
+        width:50px;
+        height:25px;
+        bottom:29px;
         }
         #searchButton:hover{
         background-color:gray;
         color:white;
         }
         #total_rows{
+        position:relative;
+        left:18px;
+        bottom:30px;
         font: bold 12px solid;
         }
         #page_list{
         position:absolute;
-        left:2px;
+        left:19px;
         height: 50px;
         bottom: -140px;
         text-align: center;
         }
         #page_list a{
         text-decoration: none;
-        color: black;
         font: 14px Arial bold, sans-serif;
         color:gray;
         }
-        #click:hover{
-        color:blue;
+        #image{
+        position:relative;
+        left:30px;
+        bottom:12px;
         }
         footer{
-            width: 1247px; 
-            height: 40px;
+            width: 1280px; 
+            height: 45px;
             margin-left: 0px;
             position: absolute;
             transform: translateY(-375%);
             background: black;
-            top: 980px;
+            bottom: -180px;
         }
         #footer{
-            top: 10px;
+            top: 8px;
             position: relative;
             color: #ffffff;
             font: 13px Arial;

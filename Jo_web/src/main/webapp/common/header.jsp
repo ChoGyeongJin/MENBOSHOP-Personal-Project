@@ -13,9 +13,9 @@
 	         
 	         if(dto != null){//로그인한 경우 %>
 	         
-               <a href="#">BASKET / 0</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	      	   <a href="/jo/day07_jsp/logout.jsp">LOGOUT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-               <a href="#"><img src="../resources/css/img/search.PNG"></a>
+               <a id="h1" href="../day13_board/basket.jsp">BASKET / 0</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	      	   <a id="h2" href="/jo/day07_jsp/logout.jsp">LOGOUT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               <a id="h3" href="#"><img src="../resources/css/img/search.PNG"></a>
 	        
 	      <% }else{//로그인하지 않은 경우 %>
 	      	 
@@ -33,8 +33,8 @@
             if(dto != null){//로그인한 경우 %>
             <ul>
             <li><a href="#"><img src="../resources/css/img/menubar.PNG"></a></li>
-            <li><a href="#">ABOUT BRAND</a></li>
-            <li><a href="#">SHOP</a></li>
+            <li><a href="../day13_board/introduce.jsp">ABOUT BRAND</a></li>
+            <li><a href="../day13_board/product.jsp">SHOP</a></li>
             <li><a href="../day13_board/list.jsp">CUSTOMER SERVICE</a></li>
             <li><a href="../day07_jsp/update.jsp">MY PAGE</a></li>
         </ul>
@@ -43,8 +43,8 @@
         <% }else{//로그인하지 않은 경우 %>
             <ul>
             <li><a href="#"><img src="../resources/css/img/menubar.PNG"></a></li>
-            <li><a href="#">ABOUT BRAND</a></li>
-            <li><a href="#">SHOP</a></li>
+            <li><a href="../day13_board/introduce.jsp">ABOUT BRAND</a></li>
+            <li><a href="../day13_board/product.jsp">SHOP</a></li>
             <li><a href="../day13_board/list.jsp">CUSTOMER SERVICE</a></li>
             <li><a href="#">MY PAGE</a></li>
         </ul>

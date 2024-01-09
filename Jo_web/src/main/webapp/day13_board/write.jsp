@@ -70,10 +70,10 @@
                         <a href="#" onclick="toggleBold()">B</a>
                         </div>
                         <div id="content_box1">
-                        <textarea name="content1" cols="125" rows="25" disabled></textarea>
+                        <textarea name="content1" cols="124" rows="25" disabled></textarea>
                         </div>
                         <div id="content_box2">
-                        <textarea name="content" cols="122" rows="21"></textarea>
+                        <textarea name="content" cols="121" rows="21"></textarea>
                         </div>
                         <div id = "line4"></div>
                         </table>

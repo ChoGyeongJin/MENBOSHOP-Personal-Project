@@ -9,16 +9,16 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>조경진_수정화면</title>
 <link rel="stylesheet" href="../resources/css/pageupdate.css">
 </head>
+
 <body>
 <c:import var="j_header" url="../common/header4.jsp"/>
 <c:import var="j_footer" url="../common/footer.jsp"/>
 <div id="wrap">
  ${j_header}
-
-
 
 <form name="frm_update" method="post" action="update_process.jsp" enctype="multipart/form-data">
                     <div id = "line1"></div>
@@ -39,7 +39,6 @@
                         </select>
                         </ul>
                         </div>
-                        </div> 
                         <div id = "subject2">
                         <select id="product" name="product" id="product">
                         <option value="코튼 치노 숏자켓 3C 61,000" ${board.product == '코튼 치노 숏자켓 3C 61,000' ? 'selected' : ''}>코튼 치노 숏자켓 3C 61,000</option>
@@ -51,7 +50,7 @@
                         </select>
                         </ul>
                         </div> 
-                    <div id = "subject3"><input type="text" name="title" id="title" value="${board.title}"></div>
+                        <div id = "subject3"><input type="text" name="title" id="title" value="${board.title}"></div>
 
                         <select id= "sub_menu1">
                         <li><option value="font1">표준</a></option>

@@ -20,20 +20,20 @@
             if(dto != null){//로그인한 경우 %>
             <ul>
             <li><a href="#"><img src="../resources/css/img/menubar.PNG"></a></li>
-            <li><a href="#">ABOUT BRAND</a></li>
-            <li><a href="#">SHOP</a></li>
-            <li><a href="../day13_board/list.jsp">CUSTOMER SERVICE</a></li>
-            <li><a href="/jo/day07_jsp/update.jsp">MY PAGE</a></li>
+            <li><a id= "l1" href="../day13_board/introduce.jsp">ABOUT BRAND</a></li>
+            <li><a id= "l2" href="../day13_board/product.jsp">SHOP</a></li>
+            <li><a id= "l3" href="../day13_board/list.jsp">CUSTOMER SERVICE</a></li>
+            <li><a id= "l4" href="/jo/day07_jsp/update.jsp">MY PAGE</a></li>
         </ul>
         <a href="/jo/day07_jsp/update.jsp"><div id="right-logo"></div></a>
         
         <% }else{//로그인하지 않은 경우 %>
             <ul>
             <li><a href="#"><img src="../resources/css/img/menubar.PNG"></a></li>
-            <li><a href="#">ABOUT BRAND</a></li>
-            <li><a href="#">SHOP</a></li>
-            <li><a href="../day13_board/list.jsp">CUSTOMER SERVICE</a></li>
-            <li><a href="/jo/day07_jsp/update.jsp">MY PAGE</a></li>
+            <li><a id= "l1" href="../day13_board/introduce.jsp">ABOUT BRAND</a></li>
+            <li><a id= "l2" href="../day13_board/product.jsp">SHOP</a></li>
+            <li><a id= "l3" href="../day13_board/list.jsp">CUSTOMER SERVICE</a></li>
+            <li><a id= "l4" href="#">MY PAGE</a></li>
         </ul>
         <a href="/jo/day07_jsp/update.jsp"><div id="right-logo"></div></a>
                

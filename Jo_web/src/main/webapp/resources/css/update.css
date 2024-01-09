@@ -97,8 +97,10 @@ h1{font-size: 0;}
         }
         #member_id{
             position: relative;
+            width:404px;
             left: -1px;
             top: -40px;
+            padding-left:4px;
         }
         #member_pw{
             position: relative;
@@ -113,7 +115,7 @@ h1{font-size: 0;}
         }
         #member_name{
             position: relative;
-            top: -40px;
+            top: -38px;
         }
         #email{
             position: relative;
@@ -130,12 +132,13 @@ h1{font-size: 0;}
             float: right;
             position: relative;
             width: 100px;
-            height: 34px;
+            height: 32px;
             right: 120px;
-            top: -20px;
+            top: -31px;
             font: bold 12px solid;
             color: black;
             background-color: white;
+            padding-left:2px;
         }
         #address-1{
             position: relative;
@@ -203,7 +206,7 @@ h1{font-size: 0;}
             width: 140px;
             height: 41px;
             left: 400px;
-            top: -25px;
+            top: -23px;
             background-color: black;
             border: 1px solid black;
             border-radius: 20px;

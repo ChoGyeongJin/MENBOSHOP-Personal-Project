@@ -119,9 +119,10 @@
             <c:if test="${not empty boardList[i-1]}"><!-- boardList에 저장된 데이터가 있는 경우 출력 -->
                 <tr>
                     <td id="no">${i}&emsp;&nbsp;</td>
+                    <td id="image"><img src="../uploads/${boardList[i-1].savefile_name}" width="30px" height="30px"></div></td>
                     <td id="product"> 
                             ${boardList[i-1].product}
-                            
+                            </td>
                     <td id="category">
                     ${boardList[i-1].category}
                     </td>
@@ -136,8 +137,6 @@
         </c:otherwise>
     </c:choose>
     <!-- 회원인 경우 페이지 네비게이션이 보여지도록 구현 -->
-                    
-                    
                     <form>
                     <table id="search_button">
             <tr>
@@ -170,7 +169,7 @@
                     </c:if>
         </table>
         </form>
-</table>
+    </table>
     </form>
     </section>
     ${j_footer}

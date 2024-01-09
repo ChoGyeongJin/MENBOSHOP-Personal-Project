@@ -1,12 +1,16 @@
 @charset "UTF-8";
 
 h1{font-size: 0;}
+*{margin:0;
+  padding:0;
+  }
 
 #wrap{
     background: #e0e0e0;
     /* height: 970px; */ /* pc기준 1536px을 기준으로 정의함 */
-    height: 860px; /* (1536 * 90) / 100 = 1382.4px */
+    height: 887px; /* (1536 * 90) / 100 = 1382.4px */
     margin: 0 auto;
+    overflow: hidden;
     padding-top: 10px;
     position: relative;
 }
@@ -45,7 +49,7 @@ a{
             align-self: flex-start;
             padding-top:200px;
             width: 233px;
-            margin-left: -268px;
+            margin-left: -231px;
         }
         #left-menu ul li{
             list-style-type: none;
@@ -79,7 +83,7 @@ a{
         #read_box{
         position:relative;
         left:270px;
-        bottom:200px;
+        bottom:170px;
         width: 880px;
         height: 450px;
         border: 2px solid gray;
@@ -104,13 +108,13 @@ a{
         }
         #product{
         position:absolute;
-        bottom:601px;
+        bottom:600px;
         left:690px;
         font: bold 12px Arial;
         }
         #date{
         position:absolute;
-        bottom:601px;
+        bottom:600px;
         left:900px;
         font: bold 12px Arial;
         }
@@ -119,8 +123,15 @@ a{
         word-wrap: break-word;
         position:absolute;
         bottom:550px;
-        left:300px;
+        left:520px;
         font: 14px Arial;
+        }
+        #read_cnt{
+        width: 820px;
+        position:absolute;
+        bottom:601px;
+        left:1050px;
+        font: bold 12px Arial;
         }
         #file{
         position:absolute;
@@ -142,6 +153,7 @@ a{
         #list:hover{
         background-color:gray;
         color:white;
+        transition:0.3s;
         }
         #revise{
         position:absolute;
@@ -158,6 +170,7 @@ a{
         background-color:white;
         color:black;
         border:1px black solid;
+        transition:0.3s;
         }
         #delete{
         position:absolute;
@@ -173,22 +186,28 @@ a{
         #delete:hover{
         background-color:gray;
         color:white;
+        transition:0.3s;
+        }
+        #image{
+        position:absolute;
+        left:301px;
+        bottom:320px;
         }
         footer{
-            width: 1264px; 
-            height: 40px;
+            width: 1280px; 
+            height: 45px;
             margin-left: 0px;
             position: absolute;
             transform: translateY(-375%);
             background: black;
-            top: 980px;
+            bottom: -180px;
         }
         #footer{
-          top: 10px;
-          position: relative;
-          color: #ffffff;
-          font: 13px Arial;
-          font-family:'Franklin Gothic Medium', 'Arial Narrow';
-          word-spacing: 4px;
-          text-align: center;
-}
+            top: 8px;
+            position: relative;
+            color: #ffffff;
+            font: 13px Arial;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow';
+            word-spacing: 4px;
+            text-align: center;
+        }
