@@ -101,10 +101,9 @@
                     <div id = "board_list">
                     <ul>
                         <li><a href="#">NO&emsp;&emsp;&emsp;&emsp;&emsp;</a></li>
-                        <li><a href="#">PRODUCT&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</a></li>
-                        <li><a href="#">CATEGORY&emsp;&emsp;&emsp;&emsp;</a></li>
-                        <li><a href="#">SUBJECT&emsp;&emsp;&emsp;&emsp;</a></li>
-                        <li><a href="#">NAME&emsp;&emsp;&emsp;&emsp;</a></li>
+                        <li><a href="#">PRODUCT&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</a></li>
+                        <li><a href="#">SUBJECT&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;</a></li>
+                        <li><a href="#">NAME&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;</a></li>
                         <li><a href="#">DATE</a></li>
                     </ul>
                     </table>
@@ -124,7 +123,7 @@
                             ${boardList[i-1].product}
                             </td>
                     <td id="category">
-                    ${boardList[i-1].category}
+                   
                     </td>
                         <td id="subject">
                        <a href="view.jsp?b_idx=${boardList[i-1].b_idx}"> ${boardList[i-1].title} <img src="../resources/css/img/new.PNG"> </a>

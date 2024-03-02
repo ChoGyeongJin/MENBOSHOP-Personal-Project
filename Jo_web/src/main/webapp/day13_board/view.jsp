@@ -45,7 +45,7 @@ ${dao.updateRead_cnt(b_idx)}
 <div id="category">${board.category}</div>
 <div id="date">DATE&emsp;${board.post_date}</div>
 <div id="content">${board.content}</div>
-<%-- <div id="read_cnt">VIEW&emsp;${board.read_cnt}</div> --%>
+<div id="read_cnt">VIEW&emsp;${board.read_cnt}</div>
 <div id="file">첨부파일1&emsp;${board.originfile_name}</div>
 <div id="image"><img src="../uploads/${board.savefile_name}" width="200px" height="250px"></div> 
 
