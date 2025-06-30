@@ -1,4 +1,4 @@
-<img src="https://github.com/user-attachments/assets/6574b706-e40c-4cc9-9e68-00c9cf998d80" width="40px" height="40px" style="vertical-align: middle;"/> <span style="font-weight: bold;">멘보샵</span>
+## <img src="https://github.com/user-attachments/assets/6574b706-e40c-4cc9-9e68-00c9cf998d80" width="40px" height="40px" style="vertical-align: middle;"/> <span style="font-weight: bold;">멘보샵</span>
 
 멘보샵("Men's Boase Shop)은 자바(Java) 기반 스마트웹 & 앱 콘텐츠 개발자 과정에서 진행한 1인 개인 프로젝트입니다. Spring을 활용하여 "쇼핑몰 웹사이트"를 구현하였습니다.
 
